@@ -22,7 +22,10 @@ export const MultipleCustomHooks = () => {
         
         
 
-        <button className="btn btn-primary" onClick={ () => increase() }>
+        <button 
+            className="btn btn-primary" 
+            disabled={ isLoading }
+            onClick={ () => increase() }>
             Next quote
         </button>
 
